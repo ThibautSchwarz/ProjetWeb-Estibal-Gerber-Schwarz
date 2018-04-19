@@ -1,0 +1,89 @@
+
+@import url(https://fonts.googleapis.com/css?family=Sarala);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+
+html{
+    background-image: url("new_york.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #762E7D;
+    background-position: top;
+}
+
+#milieu{
+
+    background-color: rgba(255,255,255,0.9);/*blanc*/
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 20%;/*largeur*/
+    padding-top: 1%;
+    padding-bottom: 3%;
+    margin: auto;/*centrer*/
+    margin-top: 10%;
+    /*border-radius: 10px;/*pour faire un arrondi*/
+    font-family: "Sarala", sans-serif;
+    font-size: 0.8em;/*********************************************/
+}
+section img{/*********************************************/
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+i{
+    padding-right: 10px;/*********************************************/
+}
+#identifiant, #motdepasse {
+    width: 80%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    margin-bottom: 10%;
+    background: #f2f2f2;
+    box-sizing: border-box;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: thin;
+}
+
+#bouton {
+
+    font-family: "Sarala", sans-serif;
+
+    border: none;
+    color: white;
+    background-color: #762E7D;
+
+    width: 60%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    font-size: 1em;
+    cursor: pointer; /*change le curseur*/
+}
+
+#bouton:hover{
+    color: #762E7D;
+    background-color: #D3DBDE;
+}
+
+
+@media screen and (max-width: 1200px){
+
+    #milieu{
+        max-width: 60%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    section img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    #milieu{
+        max-width: 90%;
+    }
+
+}

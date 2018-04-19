@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 avr. 2018, 12:55:46
+    Author     : Pierre
+*/
+@import url(https://fonts.googleapis.com/css?family=Sarala);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans);
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Sarala", sans-serif;
+    background-image: url("NY2.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: top;
+}
+header{
+    background-color: rgba(255,255,255,0.9);
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /*centre sur l'axe secondaire : vertical*/
+    font-family: "Fira+Sans", sans-serif;
+    color: #762E7D;
+}
+
+#bouton{/*Bouton se déconnecter*/
+    border: none;
+    color: white;
+    background-color: #762E7D;
+    font-size: 1em;
+    padding-right: 17%;
+    padding-left: 17%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    cursor: pointer; /*change le curseur*/
+}
+
+#bouton:hover{
+    color: #762E7D;
+    background-color: #D3DBDE;
+}
+#periode{
+    border: 2px solid #330E3B;
+    background-color: rgba(255,255,255,0.7);
+    margin-top: 1%;
+    margin-right: 30%;
+    margin-left: 30%;
+    margin-bottom: 1%;
+    padding-left: 5%;
+    padding-bottom: 1%;
+    font-size: 0.8em;
+}
+#modifier{
+    border: 2px solid #330E3B;
+    color: white;
+    background-color: #762E7D;
+    margin-top: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-right: 5%;
+    padding-left: 5%;
+    cursor: pointer;
+}
+
+#modifier:hover{
+    color: #762E7D;
+    background-color: #D3DBDE;
+}
+label
+{
+    display: block;
+    width: 200px;
+    float: left;
+}
+
+.graphique{
+    margin-left: 1%;
+
+}
+#ensembleGraphique{
+    display: flex;
+    justify-content: space-around;
+    overflow-y: scroll;
+}
+
+/*----------------RESPONSIVE----------------------*/
+@media screen and (max-width: 1200px){
+    header img{
+        display: none;
+    }
+    #periode{
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    header h1{
+        font-size: 1.5em;
+    }
+
+}
+
+@media screen and (max-width: 800px){
+
+    header h1{
+        display: none;
+    }
+    header img{
+        display: flex;
+    }
+    #bouton{
+        font-size: 0.8em;
+        padding-right: 12%;
+        padding-left: 12%;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    #periode{
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+}

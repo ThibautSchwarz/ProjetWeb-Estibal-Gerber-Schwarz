@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>LoginController</servlet-name>
+        <servlet-class>servlet.LoginController</servlet-class>
+        <!-- Les identifiants pour se connecter -->
+        <init-param>
+            <param-name>login</param-name>
+            <param-value>admin@example.com</param-value>
+        </init-param>
+        <init-param>
+            <param-name>password</param-name>
+            <param-value>2018</param-value>
+        </init-param>
+        <init-param>
+            <param-name>userName</param-name>
+            <param-value>Administrateur</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginController</servlet-name>
+        <url-pattern>/LoginController</url-pattern>
+    </servlet-mapping>
+    <!-- Un filtre qui vérifie que l'utilisateur est connecté -->
+    <filter>
+        <filter-name>ProtectedPagesFilter</filter-name>
+        <filter-class>filters.ProtectedPagesFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ProtectedPagesFilter</filter-name>
+        <url-pattern>/protected/*</url-pattern>
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+    <!-- Un listener qui compte le nombre d'utilisateurs connectés à l'application -->
+    <listener>
+        <description>Counting connected users</description>
+        <listener-class>listeners.CountingUsers</listener-class>
+    </listener>
+    <!-- Contrôle le temps au bout duquel une session inactive est détruite automatiquement -->
+    <session-config>
+        <!-- Un temps volontairement court : 1 minute -->
+        <session-timeout>
+            10
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>LoginController</welcome-file>
+    </welcome-file-list>
+</web-app>
