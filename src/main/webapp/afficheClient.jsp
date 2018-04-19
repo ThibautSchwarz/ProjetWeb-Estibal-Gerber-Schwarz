@@ -25,7 +25,7 @@
         </header>
 
         <section>
-            <a href="<c:url value="protected/client.jsp"/>">Modifier les commandes</a>
+            <a id="lien" href="<c:url value="protected/client.jsp"/>">Modifier les commandes</a>
             <p>Vous pouvez à présent modifier vos commandes.</p>
         </section>
 

@@ -1,12 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 1 avr. 2018, 08:53:11
-    Author     : Pierre
-*/
 @import url(https://fonts.googleapis.com/css?family=Sarala);
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
 
@@ -27,7 +18,6 @@ header{
     font-family: "Fira+Sans", sans-serif;
     color: #762E7D;
 }
-
 #bouton{/*Bouton se déconnecter*/
     border: none;
     color: white;
@@ -39,23 +29,20 @@ header{
     padding-bottom: 10%;
     cursor: pointer; /*change le curseur*/
 }
-
 #bouton:hover{
     color: #762E7D;
     background-color: #D3DBDE;
 }
-/*---------------------------------------------------TABLEAU---------------------------------------------------------------------------*/
-table
-{
+/*---------------------------------------------------TABLEAU---------------------------------------------------------------------*/
+table{
     margin-top: 2%;
     margin-left: 30%;
 }
-tr th{
-
+tr th{/*Titre de colonne*/
     background-color: #762E7D;
     color: white;
 }
-.boutonTableau{
+.boutonTableau{/*Bouton supprimer*/
     border: 1px solid #330E3B;
     background-color: #D3DBDE;
     padding-top: 5px;
@@ -63,43 +50,36 @@ tr th{
     cursor: pointer;
     color: #762E7D;
 }
-
 .boutonTableau:hover{
     background-color: #330E3B;
     color: white;
 }
-
-caption{
+caption{/*Titre : Commandes en cours*/
     font-size: 1.2em;
 }
-/*-------------------------------------------------FORMULAIRE----------------------------------------------------------------------------*/
-#orderForm{
+/*---------------------------------------FORMULAIRE----------------------------------------------------*/
+#orderForm{/*Saisie d'un bon de commande*/
     background-color: rgba(255,255,255,0.9);
     border-style: solid;
     margin-right: 31%;
-    margin-left: 31%;
+    margin-left: 30%;
     margin-top: 5%;
     text-align: center;
     padding-bottom: 1%;
 }
-
 #orderForm div{ /*Boutons annuler, modifier et ajouter*/
     margin-top: 20px;
-
 }
-
 #formulaire{
     margin-left: 18%;
     text-align: left;
 }
-label
-{
+label{
     display: block;
     width: 200px;
     float: left;
 }
-
-.boutonBasique{
+.boutonBasique{/*Boutons annuler, modifier et ajouter*/
     border: 2px solid #330E3B;
     color: white;
     background-color: #762E7D;
@@ -114,21 +94,18 @@ label
     background-color: #D3DBDE;
 }
 
-/*----------------RESPONSIVE----------------------*/
-@media screen and (max-width: 1200px){
+/*--------------------------------RESPONSIVE-----------------------------------------*/
+@media screen and (max-width: 1400px){
     header img{
         display: none;
     }
-    table
-    {
+    table{
         margin-left: 15%;
     }
-    #orderForm{
-
-        margin-right: 20%;
-        margin-left: 20%;
+    #orderForm{/*Saisie d'un bon de commande*/
+        margin-right: 25%;
+        margin-left: 15%;
         margin-top: 2%;
-
     }
 }
 
@@ -136,18 +113,14 @@ label
     header h1{
         font-size: 1.5em;
     }
-    table
-    {
+    table{
         margin-left: 1%;
     }
-    #orderForm{
-
+    #orderForm{/*Saisie d'un bon de commande*/
         margin-right: 13%;
         margin-left: 1%;
         margin-top: 1%;
-
     }
-
 }
 
 @media screen and (max-width: 800px){
@@ -164,13 +137,11 @@ label
         padding-left: 12%;
         padding-top: 8%;
         padding-bottom: 8%;
-
     }
     table{
         display: block;
         overflow-x: scroll;
     }
-
     table h2{
         text-align: left;
     }

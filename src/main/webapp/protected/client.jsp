@@ -37,7 +37,7 @@
                                 var template = $('#ordersTemplate').html();
                                 // On combine le template avec le résultat de la requête
                                 var processedTemplate = Mustache.to_html(template, result);
-                                // On affiche la liste des options dans le select
+                                // On affiche la 
                                 $('#orders').html(processedTemplate);
                             }
                 });
@@ -85,7 +85,7 @@
                     success:
                             function (result) {
                                 showOrders();
-                                alert(result);
+                                console.log(result);
                             },
                     error: showError
                 });
@@ -100,14 +100,14 @@
         </script>
         <!-- un CSS pour formatter la table -->
         <link rel="stylesheet" type="text/css" href="css/tableformat.css">
-        <link media="all" href="css/client.css" rel="stylesheet" type="text/css">
+        <link media="all" href="client.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
             <img src="logo33.png" alt="logo" title="Ce site a été créé par Claire ESTIBAL, Charlotte GERBER et Thibaut SCHWARZ" />
             <h1>Edition des bons de commande de ${userName}</h1>
             <form action="<c:url value="/"/>" method="POST">
-                <input type='submit' name='action' value='Se deconnecter'>
+                <input type='submit' id='bouton' name='action' value='Se deconnecter'>
             </form>
         </header>
 

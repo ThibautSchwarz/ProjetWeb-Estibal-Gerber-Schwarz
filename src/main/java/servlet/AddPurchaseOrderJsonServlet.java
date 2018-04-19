@@ -39,7 +39,7 @@ public class AddPurchaseOrderJsonServlet extends HttpServlet {
             throws ServletException, IOException {
 
         DAO dao = new DAO(DataSourceFactory.getDataSource());
-
+// on récupère les données du formulaire
         String num = request.getParameter("num");
         String qt = request.getParameter("qt");
         String prodid = request.getParameter("prodid");

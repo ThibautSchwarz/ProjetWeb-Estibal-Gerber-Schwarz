@@ -110,12 +110,13 @@ public class LoginController extends HttpServlet {
         int passwordParam = 999;
         try {
             passwordParam = parseInt(request.getParameter("passwordParam"));
-            
+          
+            //identifiants administrateurs
         String login = getInitParameter("login");
         int password = parseInt(getInitParameter("password"));
         String userName = getInitParameter("userName");
 
-        if ((login.equals(loginParam)) && (password == passwordParam)) {
+        if ((login.equals(loginParam)) && (password == passwordParam)) { // on test si les identifiants sont ceux d'un admin 
             // On a trouvé la combinaison login / password
             // On stocke l'information dans la session
             HttpSession session = request.getSession(true); // démarre la session

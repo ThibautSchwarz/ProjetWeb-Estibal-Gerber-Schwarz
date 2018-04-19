@@ -24,7 +24,7 @@
         </header>
 
         <section>
-            <a href="<c:url value="protected/admin.jsp"/>">Voir les statistiques</a>
+            <a id="lien" href="<c:url value="protected/admin.jsp"/>">Voir les statistiques</a>
             <p>Vous pouvez à présent consulter les statistiques des clients.</p>
         </section>
 

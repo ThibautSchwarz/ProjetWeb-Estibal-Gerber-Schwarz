@@ -38,9 +38,9 @@
     </listener>
     <!-- Contrôle le temps au bout duquel une session inactive est détruite automatiquement -->
     <session-config>
-        <!-- Un temps volontairement court : 1 minute -->
+        <!-- Un temps volontairement court : 5 minute -->
         <session-timeout>
-            10
+            5
         </session-timeout>
     </session-config>
     <welcome-file-list>

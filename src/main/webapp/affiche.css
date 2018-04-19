@@ -1,12 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 2 avr. 2018, 14:52:21
-    Author     : Pierre
-*/
 @import url(https://fonts.googleapis.com/css?family=Sarala);
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans);
 
@@ -15,14 +6,11 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: "Sarala", sans-serif;
-
     background-image: url("business3.jpg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: top;
 }
-
-
 header{
     background-color: rgba(255,255,255,0.9);
     display: flex;
@@ -31,8 +19,6 @@ header{
     font-family: "Fira+Sans", sans-serif;
     color: #762E7D;
 }
-
-
 section{
     text-align: center;
     background-color: rgba(255,255,255,0.9);
@@ -44,13 +30,11 @@ section{
     margin: auto;
     margin-top: 15%;
 }
-#ModifierCommandes a {
-    font-size: 1.8em;
+#lien { /*Lien modifier commande*/
+    font-size: 1.4em;
+    color: #762E7D;
 }
-
-
 footer{
-
     background-color: #330E3B;
     position:absolute;
     bottom:0px;
@@ -58,31 +42,25 @@ footer{
     font-size: 0.8em;
     color: #8CEAFF;
     text-align: right;
-
 }
-
 #bouton{/*Bouton se déconnecter*/
     border: none;
     color: white;
     background-color: #762E7D;
     font-size: 1em;
-
     padding-right: 17%;
     padding-left: 17%;
     padding-top: 10%;
     padding-bottom: 10%;
-
     cursor: pointer; /*change le curseur*/
-
 }
-
-#bouton:hover{
+#bouton:hover{/*Au survol du bouton*/
     color: #762E7D;
     background-color: #D3DBDE;
 }
 
 /*----------------RESPONSIVE----------------------*/
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     section{
         width: 30%;
     }
@@ -105,13 +83,11 @@ footer{
     header h1{
         font-size: 1em;
     }
-    
     #bouton{
-    font-size: 0.8em;
-    padding-right: 12%;
-    padding-left: 12%;
-    padding-top: 8%;
-    padding-bottom: 8%;
-        
+        font-size: 0.8em;
+        padding-right: 12%;
+        padding-left: 12%;
+        padding-top: 8%;
+        padding-bottom: 8%;
     }
 }
